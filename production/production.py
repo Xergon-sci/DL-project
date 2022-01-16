@@ -37,10 +37,9 @@ class settings:
     loss_function = torch.nn.CrossEntropyLoss()
 
     # Optimizer
-    optimizer = optim.SGD(model.parameters(), lr=0.1 , momentum=0.5)
+    #optimizer = optim.SGD(model.parameters(), lr=0.1 , momentum=0.5)
     #optimizer = optim.Adam(model.parameters(), lr=0.001)
-    #optimizer = optim.Adamax(model.parameters(), lr=0.002)
-    #optimizer = optim.RMSprop(model.parameters(), lr=0.01)
+    #optimizer = optim.Adamax(model.parameters(), lr=0.0002)
 
     # Construct a labelmap for the EMNIST balanced set,
     # so I have a reference of each class label to a number or letter based from the paper
