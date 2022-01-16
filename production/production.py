@@ -27,8 +27,8 @@ class settings:
     name = 'LeNet5'
 
     # General
-    epochs: int = 5
-    batch_size: int = 32
+    epochs: int = 30
+    batch_size: int = 128
 
     # Model
     model = LeNet5(47)
@@ -125,6 +125,7 @@ if __name__ == '__main__':
 
     LOGPATH = os.path.join(folder, f'{modelname}.log')
     MODELPATH = os.path.join(folder, f'{modelname}')
+    os.mkdir(MODELPATH)
     REPORTPATH = os.path.join(folder, f'{modelname}.pdf')
 
     # Setup logging for this file
