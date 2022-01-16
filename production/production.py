@@ -79,6 +79,7 @@ def plotLoss(train, test):
     plt.legend()
 
     plt.savefig(os.path.join(folder, 'loss.jpg'))
+    plt.close()
 
 def plotAccuracy(accuracy):
     plt.figure(figsize=(20,5))
@@ -91,6 +92,7 @@ def plotAccuracy(accuracy):
     plt.legend()
 
     plt.savefig(os.path.join(folder, 'accuracy.jpg'))
+    plt.close()
 
 def plotPerClassAccuracy(accuracies):
     labels = list(settings.label_map.values())
@@ -102,6 +104,7 @@ def plotPerClassAccuracy(accuracies):
     plt.ylabel('Accuracy (%)')
 
     plt.savefig(os.path.join(folder, 'per_class_accuracy.jpg'))
+    plt.close()
 
 if __name__ == '__main__':
 
