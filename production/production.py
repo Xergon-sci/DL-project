@@ -263,6 +263,11 @@ if __name__ == '__main__':
         logging.info(
             f'Epoch: {epoch+1}/{settings.epochs} Loss: {epoch_train_losses[-1]:.3f} Val_loss: {epoch_val_losses[-1]:.3f} Val_acc: {epoch_val_accuracies[-1]:.2f} %')
 
+        # Plotting every epoch allows and easy way to check how its going without the help of tensorboard or alike
+        plotLoss(epoch_train_losses, epoch_val_losses)
+        plotAccuracy(epoch_val_accuracies)
+        plotPerClassAccuracy(per_class_accuracy)
+
     logging.info('Training complete')
 
     logging.info('Saving model for inference')
@@ -270,15 +275,5 @@ if __name__ == '__main__':
 
     logging.info('Saving model for further training')
     torch.save(settings.model, os.path.join(MODELPATH, f'{modelname}.pt'))
-
-    logging.info('Plotting loss')
-    plotLoss(epoch_train_losses, epoch_val_losses)
-
-    logging.info('Plotting accuracy')
-    plotAccuracy(epoch_val_accuracies)
-
-    # Plotting per class accuracy OF THE LAST EPOCH in this case
-    logging.info('Plotting per class accuracy')
-    plotPerClassAccuracy(per_class_accuracy)
 
     logging.info('Normal termination')
