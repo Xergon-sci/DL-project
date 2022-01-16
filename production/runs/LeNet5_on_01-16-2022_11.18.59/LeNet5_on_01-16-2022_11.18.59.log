@@ -1,0 +1,12 @@
+2022-01-16 11:18:59,437:WARNING:No GPU available, working on CPU!
+2022-01-16 11:18:59,437:INFO:Building transformer
+2022-01-16 11:18:59,437:INFO:Building dataloaders
+2022-01-16 11:18:59,520:INFO:Sending model to device
+2022-01-16 11:18:59,521:INFO:Starting training
+2022-01-16 11:20:09,205:INFO:Epoch: 1/5 Loss: 3.821 Val_loss: 3.673 Val_acc: 23.21 %
+2022-01-16 11:21:50,969:INFO:Epoch: 2/5 Loss: 3.475 Val_loss: 3.386 Val_acc: 51.35 %
+2022-01-16 11:22:58,637:INFO:Epoch: 3/5 Loss: 3.367 Val_loss: 3.357 Val_acc: 53.51 %
+2022-01-16 11:24:13,580:INFO:Epoch: 4/5 Loss: 3.350 Val_loss: 3.350 Val_acc: 54.02 %
+2022-01-16 11:25:16,982:INFO:Epoch: 5/5 Loss: 3.343 Val_loss: 3.348 Val_acc: 54.19 %
+2022-01-16 11:25:16,982:INFO:Training complete
+2022-01-16 11:25:16,982:INFO:Saving model for inference
