@@ -24,14 +24,14 @@ from matplotlib import pyplot as plt
 @dataclass
 class settings:
     
-    name = 'LeNet5Variant'
+    name = 'LeNet5'
 
     # General
     epochs: int = 100
     batch_size: int = 128
 
     # Model
-    model = LeNet5Variant(47)
+    model = LeNet5(47)
 
     # Loss
     loss_function = torch.nn.CrossEntropyLoss()
@@ -163,8 +163,9 @@ if __name__ == '__main__':
         
         # Pad the images to a larger size to get the maximum from the highest level feature detectors conf. LeCun
         transforms.Pad(2),
-        transforms.RandomAffine(25, translate=(.2, .2), scale=(.5, 1.5)),
-               
+        #transforms.RandomAffine(25, translate=(.2, .2), scale=(.8, 1.2)),
+        transforms.RandomAffine(25),
+        
         transforms.ToTensor(),])
     
     logging.info('Building dataloaders')
