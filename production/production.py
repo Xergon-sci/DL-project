@@ -18,28 +18,28 @@ from torchvision import datasets
 from torchvision import transforms
 from dataclasses import dataclass
 from datetime import datetime
-from models import LeNet5
+from models import LeNet5, LeNet5Variant
 from matplotlib import pyplot as plt
 
 @dataclass
 class settings:
     
-    name = 'LeNet5'
+    name = 'LeNet5Variant'
 
     # General
-    epochs: int = 30
+    epochs: int = 100
     batch_size: int = 128
 
     # Model
-    model = LeNet5(47)
+    model = LeNet5Variant(47)
 
     # Loss
     loss_function = torch.nn.CrossEntropyLoss()
 
     # Optimizer
     #optimizer = optim.SGD(model.parameters(), lr=0.1 , momentum=0.5)
-    optimizer = optim.Adam(model.parameters(), lr=0.001)
-    #optimizer = optim.Adamax(model.parameters(), lr=0.0002)
+    optimizer = optim.Adam(model.parameters(), lr=0.01, weight_decay=1e-5)
+    #optimizer = optim.Adamax(model.parameters(), lr=0.002)
 
     # Construct a labelmap for the EMNIST balanced set,
     # so I have a reference of each class label to a number or letter based from the paper
@@ -164,7 +164,7 @@ if __name__ == '__main__':
         # Pad the images to a larger size to get the maximum from the highest level feature detectors conf. LeCun
         transforms.Pad(2),
         transforms.RandomAffine(25, translate=(.2, .2), scale=(.5, 1.5)),
-        
+               
         transforms.ToTensor(),])
     
     logging.info('Building dataloaders')

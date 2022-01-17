@@ -1,0 +1,39 @@
+2022-01-17 10:56:18,383:INFO:Training on GPU!
+2022-01-17 10:56:18,383:INFO:Building transformer
+2022-01-17 10:56:18,383:INFO:Building dataloaders
+2022-01-17 10:56:18,428:INFO:Sending model to device
+2022-01-17 10:56:19,411:INFO:Starting training
+2022-01-17 10:57:13,915:INFO:Epoch: 1/30 Loss: 3.813 Val_loss: 3.795 Val_acc: 8.90 %
+2022-01-17 10:58:09,251:INFO:Epoch: 2/30 Loss: 3.788 Val_loss: 3.778 Val_acc: 10.64 %
+2022-01-17 10:59:04,688:INFO:Epoch: 3/30 Loss: 3.778 Val_loss: 3.777 Val_acc: 10.77 %
+2022-01-17 11:00:00,230:INFO:Epoch: 4/30 Loss: 3.774 Val_loss: 3.773 Val_acc: 11.17 %
+2022-01-17 11:00:55,937:INFO:Epoch: 5/30 Loss: 3.768 Val_loss: 3.772 Val_acc: 11.18 %
+2022-01-17 11:01:51,219:INFO:Epoch: 6/30 Loss: 3.765 Val_loss: 3.767 Val_acc: 11.69 %
+2022-01-17 11:02:46,727:INFO:Epoch: 7/30 Loss: 3.761 Val_loss: 3.761 Val_acc: 12.37 %
+2022-01-17 11:03:42,478:INFO:Epoch: 8/30 Loss: 3.759 Val_loss: 3.753 Val_acc: 13.21 %
+2022-01-17 11:04:37,799:INFO:Epoch: 9/30 Loss: 3.756 Val_loss: 3.751 Val_acc: 13.41 %
+2022-01-17 11:05:32,804:INFO:Epoch: 10/30 Loss: 3.756 Val_loss: 3.760 Val_acc: 12.51 %
+2022-01-17 11:06:27,989:INFO:Epoch: 11/30 Loss: 3.758 Val_loss: 3.762 Val_acc: 12.29 %
+2022-01-17 11:07:23,311:INFO:Epoch: 12/30 Loss: 3.762 Val_loss: 3.751 Val_acc: 13.39 %
+2022-01-17 11:08:17,575:INFO:Epoch: 13/30 Loss: 3.758 Val_loss: 3.757 Val_acc: 12.77 %
+2022-01-17 11:09:12,146:INFO:Epoch: 14/30 Loss: 3.755 Val_loss: 3.755 Val_acc: 12.88 %
+2022-01-17 11:10:07,148:INFO:Epoch: 15/30 Loss: 3.758 Val_loss: 3.769 Val_acc: 11.53 %
+2022-01-17 11:11:02,227:INFO:Epoch: 16/30 Loss: 3.760 Val_loss: 3.760 Val_acc: 12.47 %
+2022-01-17 11:11:55,504:INFO:Epoch: 17/30 Loss: 3.762 Val_loss: 3.759 Val_acc: 12.55 %
+2022-01-17 11:12:50,787:INFO:Epoch: 18/30 Loss: 3.762 Val_loss: 3.762 Val_acc: 12.27 %
+2022-01-17 11:13:45,691:INFO:Epoch: 19/30 Loss: 3.761 Val_loss: 3.759 Val_acc: 12.61 %
+2022-01-17 11:14:39,863:INFO:Epoch: 20/30 Loss: 3.766 Val_loss: 3.775 Val_acc: 10.93 %
+2022-01-17 11:15:33,974:INFO:Epoch: 21/30 Loss: 3.766 Val_loss: 3.761 Val_acc: 12.34 %
+2022-01-17 11:16:28,763:INFO:Epoch: 22/30 Loss: 3.756 Val_loss: 3.754 Val_acc: 13.10 %
+2022-01-17 11:17:23,107:INFO:Epoch: 23/30 Loss: 3.767 Val_loss: 3.762 Val_acc: 12.36 %
+2022-01-17 11:18:18,224:INFO:Epoch: 24/30 Loss: 3.758 Val_loss: 3.753 Val_acc: 13.23 %
+2022-01-17 11:19:12,211:INFO:Epoch: 25/30 Loss: 3.754 Val_loss: 3.758 Val_acc: 12.69 %
+2022-01-17 11:20:05,348:INFO:Epoch: 26/30 Loss: 3.754 Val_loss: 3.756 Val_acc: 12.85 %
+2022-01-17 11:20:57,543:INFO:Epoch: 27/30 Loss: 3.767 Val_loss: 3.767 Val_acc: 11.72 %
+2022-01-17 11:21:49,853:INFO:Epoch: 28/30 Loss: 3.766 Val_loss: 3.765 Val_acc: 11.89 %
+2022-01-17 11:22:42,037:INFO:Epoch: 29/30 Loss: 3.767 Val_loss: 3.765 Val_acc: 11.94 %
+2022-01-17 11:23:33,684:INFO:Epoch: 30/30 Loss: 3.761 Val_loss: 3.755 Val_acc: 12.98 %
+2022-01-17 11:23:34,509:INFO:Training complete
+2022-01-17 11:23:34,509:INFO:Saving model for inference
+2022-01-17 11:23:34,512:INFO:Saving model for further training
+2022-01-17 11:23:34,514:INFO:Normal termination
