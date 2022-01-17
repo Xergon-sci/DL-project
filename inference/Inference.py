@@ -35,7 +35,7 @@ def preprocess(image_path):
 
         # Conversion to tensor
         transforms.ToTensor(),
-        # The images need to be inverted
+        # The images need to be inverted as the output of grayscale does not allign with the dataset
         lambda img: img.apply_(invert),
         ])
 
@@ -58,7 +58,7 @@ if __name__ == '__main__':
     log.addHandler(sh)
 
     MODELPATH = os.path.join(PRODUCTION, 'runs', 'LeNet5_on_01-16-2022_14.39.36', 'LeNet5_on_01-16-2022_14.39.36', 'LeNet5_on_01-16-2022_14.39.36_inference.pt')
-    IMAGEPATH = os.path.join(PATH, 'images', '044.png')
+    IMAGEPATH = os.path.join(PATH, 'images', '005.png')
 
     LABEL_MAP = {
         # not PEP8 formatted, but readable
