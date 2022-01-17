@@ -38,7 +38,7 @@ class settings:
 
     # Optimizer
     #optimizer = optim.SGD(model.parameters(), lr=0.1 , momentum=0.5)
-    #optimizer = optim.Adam(model.parameters(), lr=0.001)
+    optimizer = optim.Adam(model.parameters(), lr=0.001)
     #optimizer = optim.Adamax(model.parameters(), lr=0.0002)
 
     # Construct a labelmap for the EMNIST balanced set,
@@ -163,6 +163,7 @@ if __name__ == '__main__':
         
         # Pad the images to a larger size to get the maximum from the highest level feature detectors conf. LeCun
         transforms.Pad(2),
+        transforms.RandomAffine(25, translate=(.2, .2), scale=(.5, 1.5)),
         
         transforms.ToTensor(),])
     
