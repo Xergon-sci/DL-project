@@ -38,7 +38,7 @@ class settings:
 
     # Optimizer
     #optimizer = optim.SGD(model.parameters(), lr=0.1 , momentum=0.5)
-    optimizer = optim.Adam(model.parameters(), lr=0.01, weight_decay=1e-5)
+    optimizer = optim.Adam(model.parameters(), lr=0.001, weight_decay=1e-5)
     #optimizer = optim.Adamax(model.parameters(), lr=0.002)
 
     # Construct a labelmap for the EMNIST balanced set,
