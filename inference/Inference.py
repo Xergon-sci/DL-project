@@ -58,7 +58,8 @@ if __name__ == '__main__':
     log.addHandler(sh)
 
     MODELPATH = os.path.join(PRODUCTION, 'runs', 'LeNet5_on_01-16-2022_14.39.36', 'LeNet5_on_01-16-2022_14.39.36', 'LeNet5_on_01-16-2022_14.39.36_inference.pt')
-    IMAGEPATH = os.path.join(PATH, 'images', '005.png')
+    #MODELPATH = os.path.join(PRODUCTION, 'runs', 'LeNet5Variant_on_01-17-2022_16.29.16', 'LeNet5Variant_on_01-17-2022_16.29.16', 'LeNet5Variant_on_01-17-2022_16.29.16_inference.pt')
+    IMAGEPATH = os.path.join(PATH, 'images', '040.png')
 
     LABEL_MAP = {
         # not PEP8 formatted, but readable
@@ -93,10 +94,7 @@ if __name__ == '__main__':
 
     # Get the prediction which is most likely our target
     values, prediction = torch.max(output.data, 1)
-
-    print(output.data)
-    print(prediction.item())
-    
+  
     # Translate the predicted value to a character
     result = LABEL_MAP[prediction.item()]
     logging.info('====================')
