@@ -8,11 +8,16 @@ ___
 
 ## How to do inference
 
+1. Setup the conda environment with: `conda env create -f environment.yml`
+2. Activate the environment: `conda activate dl-proj`
+3. Run `inference.py`. By default, it will make predictions on the handwriting of me and some of my collegues.
+4. To use your own image, change the `IMAGEPATH` variable to were you have stored the image. The only requirement is that the image should be a square. (Let's say as captured by some object detection.)
+
 ## Project overview
 
 * The `experimental` folder contains some preliminary code for exploration of the dataset and a basic model.
 * The `production` folder contains the code to train the model, training was done on Hydra for speed.
-* The `inference` file contains the code to make predictions from.
+* The `inference` folder contains the code to make predictions from.
 
 ## Sources
 
