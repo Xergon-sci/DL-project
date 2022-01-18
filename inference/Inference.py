@@ -57,9 +57,9 @@ if __name__ == '__main__':
 
     log.addHandler(sh)
 
-    MODELPATH = os.path.join(PRODUCTION, 'runs', 'LeNet5_on_01-16-2022_14.39.36', 'LeNet5_on_01-16-2022_14.39.36', 'LeNet5_on_01-16-2022_14.39.36_inference.pt')
-    #MODELPATH = os.path.join(PRODUCTION, 'runs', 'LeNet5Variant_on_01-17-2022_16.29.16', 'LeNet5Variant_on_01-17-2022_16.29.16', 'LeNet5Variant_on_01-17-2022_16.29.16_inference.pt')
-    IMAGEPATH = os.path.join(PATH, 'images', '040.png')
+    #MODELPATH = os.path.join(PRODUCTION, 'runs', 'LeNet5_on_01-16-2022_14.39.36', 'LeNet5_on_01-16-2022_14.39.36', 'LeNet5_on_01-16-2022_14.39.36_inference.pt')
+    MODELPATH = os.path.join(PRODUCTION, 'runs', 'LeNet5_on_01-16-2022_14.09.16', 'LeNet5_on_01-16-2022_14.09.16', 'LeNet5_on_01-16-2022_14.09.16_inference.pt')
+    IMAGEPATH = os.path.join(PATH, 'images', '023.png')
 
     LABEL_MAP = {
         # not PEP8 formatted, but readable
@@ -98,5 +98,5 @@ if __name__ == '__main__':
     # Translate the predicted value to a character
     result = LABEL_MAP[prediction.item()]
     logging.info('====================')
-    logging.info(f'The image represent a {result}.')
+    logging.info(f'The image represents a(n) {result}.')
     logging.info('====================')
